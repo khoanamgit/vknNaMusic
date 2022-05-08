@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>NaMusic</title>
+</head>
+<body>
+    <!-- Header Navbar -->
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-music icon-logo"></i>
+                <span>NaMusic</span>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu__bar">
+                <i class="fa-solid fa-bars icon-menu"></i>
+                <i class="fa-solid fa-x icon-menuquit"></i>
+            </label>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">
+                        Home
+                    </a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">
+                        Music
+                    </a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">
+                        Contact
+                    </a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">
+                        About
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar__auth">
+                <a href="" class="btn btn-signout">Sign Out</a>
+
+                <a href="" class="btn btn-signin">Sign In</a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Play -->
+    <div class="wrap">
+        <div class="dashboard">
+            <!-- Audio Volume -->
+            <div class="volume">
+                <div class="volume__icon">
+                    <!-- <i class="fa-solid fa-volume-xmark icon-mute"></i> -->
+                    <i class="fa-solid fa-volume-high icon-volume"></i>
+                    <i class="fa-solid fa-user icon-user"></i>
+
+                </div>
+                <div class="volume__bar ">
+                    <input type="range" id="volume" min="0" max="100" step="1">
+                </div>
+            </div>
+            <!-- DashBoard Header -->
+            <div class="dashboard__header">
+                <h3>Now Playing</h3>
+                <h2>Muốn Em Là</h2>
+            </div>
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd__thumb" style="background-image: url('https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/7/4/0/9/7409e051f6f27cb8e6d241654ebb20d3.jpg');"></div>
+            </div>
+
+            <!-- Progess -->
+            <div class="progess__bar">    
+                <input type="range" id="progess" class="progess" max="100" min="0" step="1" value="">
+                <div class="progess__time">
+                    <span class="time__start"></span>
+                    <span class="time__end"></span>
+                </div>
+            </div>
+
+            <!-- Control Button -->
+            <div class="control">
+                <div class="btn btn__random ">
+                    <i class="fa-solid fa-shuffle icon-random"></i>
+                </div>
+                <div class="btn btn__prev">
+                    <i class="fa-solid fa-backward icon-prev"></i>
+                </div>
+                <div class="btn btn__toggle-play">
+                    <i class="fa-solid fa-play icon-play"></i>
+                    <i class="fa-solid fa-pause icon-pause"></i>
+                </div>
+                <div class="btn btn__next">
+                    <i class="fa-solid fa-forward icon-next"></i>
+                </div>
+                <div class="btn btn__playlist">
+                    <i class="fa-solid fa-list icon-playlist"></i>
+                </div>
+            </div>
+
+            <audio src="" id="audio"></audio>
+          
+        </div>
+        <div class="load__playlist">
+            <div class="load__heading">
+                <h4 class="load__header">
+                    Play List
+                </h4>
+                <div class="load__quit">
+                    <i class="fa-solid fa-x icon-quit"></i>
+                </div>
+            </div>
+            <div class="music__playlist ">
+                
+    
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer__container">
+            <div class="footer__header">
+                <div class="footer__logo">
+                    <i class="fa-solid fa-music icon-logo"></i>
+                    <span>NaMusic</span>
+                </div>
+                <div class="footer__desc">
+                    Đây là sản phẩm nghe nhạc thiết kế bằng <span>HTML, CSS, JAVASCRIPTL</span>
+                </div>
+                <div class="footer__cpr">
+                    @Copyright by KhoaNam 2022
+                </div>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link-header">
+                        Công Ty
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        Giới thiệu
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        Việc làm
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link-header">
+                        Cộng Đồng
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        Nghệ sĩ
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        Nhà phát triển
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        Quảng cáo
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        Nhà đầu tư
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        Nhà cung cấp
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link-header">
+                       Liên Kết Với Chúng Tôi
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        <i class="fa-brands fa-github"></i>
+                        Github
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        <i class="fa-brands fa-linkedin"></i>
+                        Linkedin
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link">
+                        <i class="fa-solid fa-phone"></i>
+                        Phone +0333 156 124
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
